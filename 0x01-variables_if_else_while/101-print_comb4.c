@@ -2,32 +2,34 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
- * Return: Always 0 (Successful)
+ * main -Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, j, k;
+	int x, y, z;
 
-	for (i = '0'; i < '9'; i++)
+	for (x = '0'; x < '9'; x++)
 	{
-		for (j = i + 1; j <= '9'; j++)
-		{
-			for (k = j + 1; k <= '9'; k++)
-			{
-				if ((j != i) != k)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (i == '7' && j == '8')
-						continue;
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
+
+	for (y = x + 1; y <= '9'; y++)
+	{
+
+	for (z = y + 1; z <= '9'; z++)
+	{
+	if ((y != x) != z)
+	{
+	putchar(x);
+	putchar(y);
+	putchar(z);
+	if (x == '7' && y == '8')
+	continue;
+	putchar(',');
+	putchar(' ');
 	}
-	putchar('n\n');
+	}
+	}
+	}
+	putchar('\n');
 	return (0);
 }
