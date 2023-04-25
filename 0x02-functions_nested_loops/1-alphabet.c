@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
- * Return: Always 0 (Successful)
+ * Return: Always 0 (Sucessful)
  */
 int main(void)
 {
@@ -9,9 +9,9 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		putchar (c);
+		_putchar(c);
 		c++
 	}
 	_putchar('\n');
-	return (0);
+		return (0);
 }
