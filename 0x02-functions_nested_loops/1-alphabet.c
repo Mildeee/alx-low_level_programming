@@ -2,7 +2,8 @@
 /**
  * print_alphabet - Entry point
  * Return: Always 0 (Successful)
- */
+*/
+
 void print_alphabet(void)
 {
 	char c = 'a';
@@ -12,5 +13,6 @@ void print_alphabet(void)
 		putchar(c);
 		c++;
 	}
+
 	putchar('\n');
 }
