@@ -4,7 +4,7 @@
  * @n: the int to check
  * Rturn: 1 and prints + n is greater than zero
  * 0 and prints 0 if n is zero
- * -1 and print - if n is less than zero
+ * -1 and prints - if n is less than zero
  */
 int print_sign(int n)
 {
