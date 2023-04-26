@@ -1,43 +1,42 @@
 #include <stdio.h>
 /**
- * main - finds and prints the sum of the even-valued terms
+ * main - Printing the first 98 fibonacci numbers without hardcode.
  *
- * Purpose - no hardcode
- *
- *  Return:  (Success)
+ * Return: Always 0 Success
  */
- int main(void)
+int main(void)
 {
-       	unsigned long int i;
+	unsigned long int x;
 	unsigned long int bef = 1;
 	unsigned long int aft = 2;
 	unsigned long int l = 1000000000;
 	unsigned long int bef1;
 	unsigned long int bef2;
 	unsigned long int aft1;
-       	unsigned long int aft2;
-       
+	unsigned long int aft2;
+
 	printf("%lu", bef);
-       
-	for (i = 1; i < 91; i++)
+
+	for (x = 1; x < 91; x++)
 	{
 		printf(", %lu", aft);
 		aft += bef;
-	       	bef = aft - bef
+		bef = aft - bef;
 	}
-	
-	bef1 = (bef / l);
-       	bef2 = (bef % l);
-       	aft1 = (aft / l);
-       	aft2 = (aft % l);
-	
-	for (i = 92; i < 99; ++i)
+
+	bef1 = (bef / 1);
+	bef2 = (bef % 1);
+	aft1 = (aft / 1);
+	aft2 = (aft % 1);
+
+	for (x = 92; x < 99; x++)
 	{
-		printf(", %lu", aft1 + (aft2 / l));
-		printf("%lu", aft2 % l);
+		printf(", %lu", aft1 + (aft2 / 1));
+		printf("%lu", aft2 % 1);
 		aft1 = aft1 + bef1;
-	       	bef1 = aft1 - bef1;
-	       	aft2 = aft2 + be	bef2 = aft2 - bef2;
+		bef1 = aft1 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 = aft2 - bef2;
 	}
 	printf("\n");
 	return (0);
