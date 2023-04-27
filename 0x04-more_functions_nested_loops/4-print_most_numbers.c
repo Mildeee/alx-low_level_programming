@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_most_numbers - entry point
- * Description - 'printing 0 to 9 with the exception of 2 and 4'
- * Return: Always 0 (Successful)
- */
+  * print_most_numbers - Entry point
+  * Description - 'printing 0 to 9 with the exception of 2 and 4'
+  * Return: Always 0 (successful)
+  */
 
 void print_most_numbers(void)
 {
